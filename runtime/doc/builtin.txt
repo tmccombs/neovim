@@ -7569,7 +7569,9 @@ sinh({expr})						*sinh()*
 
 sockconnect({mode}, {address} [, {opts}])		 *sockconnect()*
 		Connect a socket to an address. If {mode} is "pipe" then
-		{address} should be the path of a named pipe. If {mode} is
+		{address} should be the path of a (windows) named pipe. Note
+		that unidirectional named pipes, such as those on linux, are
+		not supported. If {mode} is
 		"tcp" then {address} should be of the form "host:port" where
 		the host should be an ip adderess or host name, and port the
 		port number.
